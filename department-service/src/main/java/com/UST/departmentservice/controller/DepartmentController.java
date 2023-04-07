@@ -16,7 +16,7 @@ public class DepartmentController {
         return services.saveDepartmentById(department);
     }
     @GetMapping("/{id}")
-    public  Department findDepartmentById(@PathVariable("id")Long departmentId){
+    public  Department findByDepartmentId(@PathVariable("id")Long departmentId){
         return services.findByDepartmentId(departmentId);
     }
 }

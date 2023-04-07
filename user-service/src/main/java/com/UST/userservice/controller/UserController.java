@@ -21,9 +21,9 @@ public class UserController {
     }
     @GetMapping("/{id}")
 
-    public ResponseTemplateVO getUserswithDepartment(Long userId) {
-        log.info("inside getUserswithDepartment of UserController");
-        return userservices.getUsersWithdepartment(userId);
+    public ResponseTemplateVO getUserwithDepartment(Long userId) {
+        log.info("inside getUserwithDepartment of UserController");
+        return userservices.getUserWithdepartment(userId);
     }
 
 

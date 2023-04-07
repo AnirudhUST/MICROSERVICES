@@ -18,9 +18,9 @@ public class UserServices {
         return  repo.save(user);
     }
 
-    public ResponseTemplateVO getUsersWithdepartment(Long userid) {
+    public ResponseTemplateVO getUserWithdepartment(Long userId) {
         ResponseTemplateVO vo=new ResponseTemplateVO();
-        User user=repo.findByUserId(userid);
+        User user=repo.findByUserId(userId);
         Department department=
                 restTemplate.getForObject("http://DEPARTMENT-SERVICE/department/"+user.getDepartmentId(),Department.class);
 
